@@ -105,7 +105,7 @@
 		<div id="team">
 			<a href="http://dbbwng.com">Debbie Wang</a>
 			<a href="http://egsagata.com">Eric Sagata</a>
-			<a href="https://github.com/jgcarlson">Jonathan Carlson</a>
+			<a href="https://www.linkedin.com/in/jonathancarlson91104/">Jonathan Carlson</a>
 			<a href="http://scottmarden.com">Scott Marden</a>
 		</div> 	
 	<h3>Coming Features:</h3>
