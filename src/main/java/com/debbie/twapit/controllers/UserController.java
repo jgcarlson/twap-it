@@ -176,6 +176,10 @@ public class UserController {
 	@RequestMapping("/admin")
 	public String adminDashboard(Principal principal, Model model) {
 		User currentUser = userService.findByEmail(principal.getName());
+		
+		List<User> invitations = friendService.findInvitations(currentUser.getId());
+		model.addAttribute("invitations", invitations);
+		
 		List<Twap> twaps = twapService.getTwaps();
 		List<User> allUsers = userService.findAllUsers();
 		model.addAttribute("twaps", twaps);
@@ -199,5 +203,12 @@ public class UserController {
 			return "redirect:/reroute";
 		}
 	}	
+	
+	@RequestMapping("/about")
+	public String aboutPage(Principal principal, Model model) {
+		User currentUser = userService.findByEmail(principal.getName());
+		model.addAttribute("currentUser", currentUser);
+		return "aboutView";
+	}
 
 }
