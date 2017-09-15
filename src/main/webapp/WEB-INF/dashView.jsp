@@ -127,12 +127,13 @@
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
 			<a class="nav-item nav-link active" href="/dashboard">Home <span class="sr-only">(current)</span></a>
+			<a class="nav-item nav-link" href="/about">About</a>
 			<a id="notifications" class="nav-item nav-link notif" href="#">Notifications 
 					<c:if test="${invitations != null}">
 					<span class="badge badge-secondary">${invitations.size()}</span>
 					</c:if>
 			</a>
-			<a class="nav-item nav-link" href="#">Messages</a>
+			<a class="nav-item nav-link disabled" href="#">Messages</a>
 		</div>
 	</div>
 	

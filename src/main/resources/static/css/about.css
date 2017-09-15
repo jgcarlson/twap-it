@@ -1,9 +1,4 @@
-
-.icon {
-	height: 15px;
-}
-
- body, html {
+body, html {
     height: 100%;
     width: 100%;
     background-color: #333232;
@@ -11,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Varela Round;
+    overflow: hidden;
 }
 
 html {
@@ -23,15 +19,15 @@ html {
 	background-color: #fff;
 	width: 222px;
 	top: 50px;
-	left: 163px;
+	left: 215px;
 }
 
 a {
-	color: #CBB8A9;
+	color: #88958D;
 }
 
 a:hover {
-	color: #88958D;
+	color: #E3E4DB;
 }
 
 .g:hover {
@@ -93,17 +89,13 @@ a:hover {
 .user_name {
 	margin: 0px;
 	font-weight: bold;
-	color: #000;
+	color: #88958D;
 }
+
 .user_email {
 	margin: 0px;
 	font-weight: 100;
 	color: #CBB8A9;
-}
-
-#viewButtons {
-	text-align: center;
-	margin-top: 4vh;
 }
 
 button {
@@ -118,46 +110,49 @@ button:hover {
 	background-color: #88958D;
 }
 
-#twaps_search, #users_search {
-	width: 300px;
-	margin: auto;
+#about, #team {
+	padding: 8px;
+	margin-top: 4vh;
+	background-color: #F1F5F4;
+	border: 1px solid #ccc;
+	border-radius: 3px;
 }
 
-h1 {
-	color: #F1F5F4;
-	font-weight: bold;
-	text-align: center;
-	margin: 3px;
+#upcoming {
+	padding: 8px;
+	background-color: #F1F5F4;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 3vh;
 }
 
 h3 {
 	color: #F1F5F4;
 	font-weight: bold;
 	text-align: center;
-	margin: 2%;
-	
+	margin-top: 4vh;
 }
 
-#main-content  h5, p, ul, li{
-	background-color: #F1F5F4;
-	margin: 0 20%;
-	padding: .5% 2%;
-	
+h4 {
+	color: #CBB8A9;
 }
 
-#team {
-	margin-top: 1%;
-	margin-left: 30%;
-	
+#left {
+	display: inline-block;
+	margin-left: 2vw;
 }
 
-#team a{
-	color: black;
-	font-size: 125%;
-	background-color: #F1F5F4;
-	padding: 1%;
-	margin: 1%;
-	text-align: center;
+#right {
+	display: inline-block;
+	vertical-align: top;
 }
 
+.us {
+	margin: 3px;
+}
 
+.ourPic {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}

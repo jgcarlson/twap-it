@@ -208,6 +208,10 @@ public class UserController {
 	public String aboutPage(Principal principal, Model model) {
 		User currentUser = userService.findByEmail(principal.getName());
 		model.addAttribute("currentUser", currentUser);
+		
+		List<User> invitations = friendService.findInvitations(currentUser.getId());
+		model.addAttribute("invitations", invitations);
+		
 		return "aboutView";
 	}
 

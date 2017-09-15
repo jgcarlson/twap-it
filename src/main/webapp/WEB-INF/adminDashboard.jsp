@@ -30,12 +30,13 @@
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
 			<a class="nav-item nav-link" href="/dashboard">Home</a>
+			<a class="nav-item nav-link" href="/about">About</a>
 			<a id="notifications" class="nav-item nav-link notif" href="#">Notifications 
 					<c:if test="${invitations != null}">
 					<span class="badge badge-secondary">${invitations.size()}</span>
 					</c:if>
 			</a>
-			<a class="nav-item nav-link" href="#">Messages</a>
+			<a class="nav-item nav-link disabled" href="#">Messages</a>
 		</div>
 	</div>
 	
@@ -109,9 +110,9 @@
 			<table class="table table-hover table-bordered" id="twaps_table">
 				<thead>
 					<tr>
-						<th class="w-45">Twap</th>
-						<th class="w-25">Twapped By</th>
-						<th class="w-5">Actions</th>
+						<th class="w-45">TWAP</th>
+						<th class="w-25">TWAPPED BY</th>
+						<th class="w-5">ACTIONS</th>
 					</tr>
 				</thead>
 				<tbody id="twaps_table_body">
@@ -141,9 +142,9 @@
 			<table class="table table-striped table-bordered table-hover"  id="users_table">
 				<thead>
 					<tr>
-						<th>Name</th>
-						<th>Email</th>
-						<th>Actions</th>
+						<th>NAME</th>
+						<th>EMAIL</th>
+						<th>ACTIONS</th>
 					</tr>
 				</thead>
 				<tbody id="users_table_body">
